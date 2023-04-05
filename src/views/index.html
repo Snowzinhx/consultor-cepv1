@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Consultor de CEP</title>
+</head>
+
+<body class="flex justify-center items-center w-screen h-screen bg-slate-800">
+    <nav class="fixed w-full self-start bg-transparent py-2">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="./index.html">
+                <h1 class="text-2xl text-slate-100">Snowzinhx</h1>
+            </a>
+            <div class="flex flex-flow items-center justify-between">
+                <!-- <ul class="flex flex-row">
+                    <li>
+                        <a class='font-bold text-gray-200 p-5' href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class='font-bold text-gray-200 p-5' href="./about.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a class='font-bold text-gray-200 p-5' href="./portfolio.html">Portfólio</a>
+                    </li>
+                    <li>
+                        <a class='font-bold text-gray-200 p-5' href="./contato.html">Contato</a>
+                    </li>
+                </ul> -->
+                <div>
+                    <ul class="flex flex-row">
+                        <li><a class="text-xl font-bold text-gray-200 p-1" href="https://discord.gg/rv48ff66he" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+                        <li><a class="text-xl font-bold text-gray-200 p-1" href="https://github.com/Snowzinhx" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a class="text-xl font-bold text-gray-200 p-1" href="https://www.linkedin.com/in/gilcinei-alves" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+
+        </div>
+    </nav>
+    <main>
+        <div class="flex">
+            <form class="flex flex-col">
+                <span class="text-xl font-bold text-gray-200 w-72 text-justify" id="textError"></span>
+                <label for="cep" class="text-xl font-bold text-gray-200" >CEP:</label>
+                <input class="py-1 my-1 rounded-md" type="text" id="cep" placeholder="Digite seu cep aqui:">
+                <label  class="text-xl font-normal text-gray-200">Endereço:</label>
+                <input class="py-1 my-1 rounded-md" type="text" id="logradouro"  disabled>
+                <input class="py-1 my-1 rounded-md" type="text" id="bairro" disabled>
+                <input class="py-1 my-1 rounded-md" type="text" id="cidade" disabled>
+                <input class="py-1 my-1 rounded-md" type="text" id="ddd" disabled>
+                <button class="bg-emerald-400 font-semibold text-slate-900 rounded-md py-2" id="btnSubmit" onclick="buscarCep()">Buscar</button>
+            </form>
+        </div>
+    </main>
+    <script src="../public/js/script.js"></script>
+</body>
+
+</html>
